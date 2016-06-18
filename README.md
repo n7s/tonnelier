@@ -17,19 +17,17 @@ See the [FONTLOG.txt](FONTLOG.txt) for all the details.
 
 ## Building the fonts with ufo2ft
 
-Build dependencies:  
-[Python](https://www.python.org/), [ufo2ft](https://github.com/jamesgk/ufo2ft),
+Build dependencies: [Python](https://www.python.org/), [ufo2ft](https://github.com/jamesgk/ufo2ft), 
 [fonttools](https://github.com/behdad/fonttools), [ufoLib](https://github.com/unified-font-object/ufoLib), [Robofab](https://github.com/robofab-developers/robofab).
 
 ~~~
 tools/build.py
 ~~~
-(the files will show up in builds/)
+(the font files will show up in builds/)
 
 ## Building the fonts with smith
 
-Build dependencies:  
-[smith](https://github.com/silnrsi/smith)
+Build dependencies:  [smith](https://github.com/silnrsi/smith)
 ~~~
 smith configure
 smith build
@@ -39,4 +37,13 @@ smith srcdist
 smith exe 
 smith distclean
 ~~~
-(the files with show up in results/)
+(the various files with show up in results/)
+
+
+## Generating specimens
+
+Dependencies: [sile](http://sile-typesetter.org/)  
+(the fonts must have been built obviously)
+~~~
+sile documentation/specimen.sil
+~~~
