@@ -53,13 +53,12 @@ Change Log
 / / / / / / / / / /
 (This should list both major and minor changes, most recent first.)
 
-16 June 2014 
-- Initial release.
 
 18 June 2016 - Tonnelier Version 2.000
 - fork of Cooper reorganizing the repo and the buildpath.
 
-
+16 June 2014 Cooper Hewitt Version 1.000
+- Initial release.
 
 
 Information for Developers/Contributors
@@ -100,12 +99,11 @@ W: http://typesupply.com/
 D: UFO file preparation
 
 N: Nicolas Spalinger
-W: http://planer.open-fonts.org 
+W: http://planet.open-fonts.org 
 D: forking to streamline the git repo and the build toolchain
 
 
 
 The Cooper Hewitt typeface is maintained by Village Type and Design LLC: CooperHewitt@vllg.com
 
-(We acknowledge SIL, the company behind the Open Font License (OFL); this Font Log is based on the Fontlog created for the Gentium typeface project.)
-
+(We acknowledge SIL, the non-profit behind the Open Font License (OFL); this Fontlog is based on the Fontlog created for the Gentium typeface project.)
