@@ -1,37 +1,46 @@
 \begin[papersize=a4]{document}
+\script[src=packages/url]
 \script[src=packages/specimen]
 \script[src=packages/lorem]
 
 \define[command=specimentext]{ 
 
-Specimen generated with SILE (sile-typesetter.org).
+Specimen generated with SILE - \url{http://www.sile-typesetter.org}
+
 \smallskip 
 
+Pangrams:
+\smallskip 
 \pangrams
+
+Lorem Ipsum:
+\smallskip 
+\lorem[words=77]
 \smallskip 
 
-\lorem[words=20]
+Glyph repertoire:
 \smallskip 
-
 \repertoire
 \smallskip 
 
 \break
 }
 
-\font[filename=../builds/Tonnelier-Thin.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-ThinItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Regular.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Light.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-LightItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Medium.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-MediumItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Book.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-BookItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Semibold.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-SemiboldItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Bold.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-BoldItalic.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-Heavy.otf,size=13pt] \specimentext
-\font[filename=../builds/Tonnelier-HeavyItalic.otf,size=13pt] \specimentext	
+\font[filename=builds/Tonnelier-Thin.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-ThinItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Regular.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Light.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-LightItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Medium.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-MediumItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Book.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-BookItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Semibold.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-SemiboldItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Bold.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-BoldItalic.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-Heavy.otf,size=13pt] \specimentext
+\font[filename=builds/Tonnelier-HeavyItalic.otf,size=13pt] \specimentext
+
+
 \end{document}
