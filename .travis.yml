@@ -12,16 +12,11 @@ before_install:
     - add-apt-repository -y -q ppa:fontforge/fontforge
     - apt-get update -qq  
 
-addons:
-  apt:
-    packages:
-    - ttfautohint
-
 install:
     - apt install smith-font
 
 script:
-	- echo "Commit range/commit/commit build number:" $TRAVIS_COMMIT_RANGE $TRAVIS_COMMIT $TRAVIS_BUILD_NUMBER
+	- echo $TRAVIS_COMMIT_RANGE $TRAVIS_COMMIT $TRAVIS_BUILD_NUMBER
     - smith configure
     - smith build
     - smith alltests
