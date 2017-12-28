@@ -8,8 +8,8 @@ os: linux
 dist: xenial
 
 before_install:
-    - add-apt-repository -y -q ppa:silnrsi/smith
-    - add-apt-repository -y -q ppa:fontforge/fontforge
+    - add-apt-repository -y ppa:silnrsi/smith
+    - add-apt-repository -y ppa:fontforge/fontforge
     - apt-get update -qq  
 
 install:
