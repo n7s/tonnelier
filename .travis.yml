@@ -8,12 +8,12 @@ os: linux
 dist: xenial
 
 before_install:
-    - add-apt-repository -y ppa:silnrsi/smith
-    - add-apt-repository -y ppa:fontforge/fontforge
-    - apt-get update -qq  
+    - sudo add-apt-repository -y ppa:silnrsi/smith
+    - sudo add-apt-repository -y ppa:fontforge/fontforge
+    - sudo apt-get update -qq  
 
 install:
-    - apt install smith-font
+    - sudo apt install smith-font
 
 script:
     - smith configure
