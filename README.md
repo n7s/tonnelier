@@ -34,7 +34,6 @@ smith build
 smith pdfs
 smith zip
 smith srcdist
-smith exe 
 smith distclean
 ~~~
 (the various files with show up in results/)
