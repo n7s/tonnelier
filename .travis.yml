@@ -16,7 +16,6 @@ install:
     - apt install smith-font
 
 script:
-	- echo $TRAVIS_COMMIT_RANGE $TRAVIS_COMMIT $TRAVIS_BUILD_NUMBER
     - smith configure
     - smith build
     - smith alltests
