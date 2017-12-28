@@ -3,6 +3,9 @@
 This is the Tonnelier fork of Cooper Hewitt.
 Tonnelier is french for Cooper. 
 
+
+[![Build Status](https://travis-ci.org/n7s/tonnelier.svg?branch=master)](https://travis-ci.org/n7s/tonnelier)
+
 Chester Jenkins of [Village](http://vllg.com/) created the custom typeface called Cooper Hewitt for the [Cooper Hewitt](http://www.cooperhewitt.org/) Smithsonian Design Museum.
 (http://www.cooperhewitt.org/colophon/cooper-hewitt-the-typeface-by-chester-jenkins/).  
 This design started life as Galaxie Polaris Condensed, a geometric, sans-serif font that Chester Jenkins had worked on years ago.
