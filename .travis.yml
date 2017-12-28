@@ -1,0 +1,44 @@
+language: python
+python:
+    - "2.7"
+    #- "3.6"
+
+sudo: true
+os: linux
+dist: xenial
+
+before_install:
+    - add-apt-repository -y -q ppa:silnrsi/smith
+    - add-apt-repository -y -q ppa:fontforge/fontforge
+    - apt-get update -qq  
+
+addons:
+  apt:
+    packages:
+    - ttfautohint
+
+install:
+    - apt install smith-font
+
+script:
+	- echo "Commit range/commit/commit build number:" $TRAVIS_COMMIT_RANGE $TRAVIS_COMMIT $TRAVIS_BUILD_NUMBER
+    - smith configure
+    - smith build
+    - smith alltests
+    - smith zip
+    - smith tarball
+    - smith release
+    - smith checksums
+    - sile documentation/specimen.sil 
+
+
+branches:
+   only:
+    - master
+
+notifications:
+    email: false
+    irc: false
+
+
+
