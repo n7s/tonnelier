@@ -1,39 +1,37 @@
 language: python
 python:
-    - "2.7"
-    #- "3.6"
-
+- '2.7'
 sudo: true
 os: linux
 dist: xenial
-
 before_install:
-    - sudo add-apt-repository -y ppa:silnrsi/smith
-    - sudo add-apt-repository -y ppa:fontforge/fontforge
-    - sudo apt-get update -qq  
-
+- sudo add-apt-repository -y ppa:silnrsi/smith
+- sudo add-apt-repository -y ppa:fontforge/fontforge
+- sudo apt-get update -qq
 install:
-    - sudo apt install smith-font
-    - sudo apt install sile 
-
+- sudo apt install smith-font
+- sudo apt install sile
 script:
-    - smith configure
-    - smith build
-    - smith alltests
-    - smith zip
-    - smith tarball
-    - smith release
-    - smith checksums
-    - sile documentation/specimen.sil 
-
-
+- smith configure
+- smith build
+- smith alltests
+- smith zip
+- smith tarball
+- smith release
+- smith checksums
+- sile documentation/specimen.sil
 branches:
-   only:
-    - master
-
+  only:
+  - master
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: "$GITHUB_TOKEN"
+  on:
+    branch: master
 notifications:
-    email: false
-    irc: false
-
-
-
+  email: false
+  irc: false
+env:
+  global:
+    secure: mk3i+Q+6vYU6HT06QrWlwoRRAtJXGBPKSKgYgo6fpSbZ2MlMYn3ODDEZuzE6TWTi2vyZrz9xUYdIGlwNwaRUX/fPskQcyOQ5qJn6VQzKsDbN56AanwSYOoCa8QTyRDezVP/r5npEjvJKK9fuacLsLMcltDUJ0pKC+WPT97+hHSPxhmlA7LufPFOivE4vMQgz2SFjNIS9OAEIISpIKSyjPHlBOCvZOtx3bgnnp2xydFfraF4j9ZpgsNV2bfUhLy2jC61XNZ00wtpqANLO5y16iXSsI69UDt1QqBFIQPhBAEEslYYgBTKjhR0jIvclETy+Dhjfb+3h8KVFkEouWqgfgArHwhJP5vZFHjiENJ35dSFXS0iZyv7iwVmGhde9xuFHooDYRQl8xIoGZ4zgY3vpOyRreAMogON65Cp04i2mLhUcgOxY48qWu+4ol6puVt1eZP3ieVZeMIxUhFmbVtVO2x3ITYh51AWXNgAfZeEaSq4Vv9BTTziKfhHub8/+0nf3E1tT/b8UuZQ/brVxxoKLlq8AHECVr6Acmfjn6id3DEW0FKsuCDdoucIoyUg2sQygKgJ0MrkzhYPT71U9jPuGCcPSfTM34jUNh9CY9iqytSsRJ0pPeRRcI2eBzwVhShigE7ZjDQH/R+4hv475snuG0JWaY8DenVqjxKNxqYFCIqQ=
