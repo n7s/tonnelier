@@ -1,18 +1,16 @@
 # Tonnelier
 
-This is the Tonnelier fork of Cooper Hewitt.
+This is the Tonnelier fork of Cooper Hewitt.  
 Tonnelier is french for Cooper. 
 
 
 [![Build Status](https://travis-ci.org/n7s/tonnelier.svg?branch=master)](https://travis-ci.org/n7s/tonnelier)
 
-Chester Jenkins of [Village](http://vllg.com/) created the custom typeface called Cooper Hewitt for the [Cooper Hewitt](http://www.cooperhewitt.org/) Smithsonian Design Museum.
-(http://www.cooperhewitt.org/colophon/cooper-hewitt-the-typeface-by-chester-jenkins/).  
-This design started life as Galaxie Polaris Condensed, a geometric, sans-serif font that Chester Jenkins had worked on years ago.
-(https://vllg.com/constellation/galaxie-polaris-cond).
+Chester Jenkins of [Village](http://vllg.com/) created the custom typeface called Cooper Hewitt for the [Cooper Hewitt](http://www.cooperhewitt.org/) [Smithsonian Design Museum](http://www.cooperhewitt.org/colophon/cooper-hewitt-the-typeface-by-chester-jenkins/).  
+This design started life as [Galaxie Polaris Condensed](https://vllg.com/constellation/galaxie-polaris-cond) a geometric, sans-serif font that Chester Jenkins had worked on years ago.
 
-This Font Software is licensed under SIL Open Font License 1.1 (http://scripts.sil.org/OFL)  
-See the FAQ on (http://scripts.sil.org/OFL-FAQ_web).
+This Font Software is licensed under SIL Open Font License 1.1 [scripts.sil.org/OFL](http://scripts.sil.org/OFL)  
+See the FAQ on [scripts.sil.org/OFL-FAQ_web](http://scripts.sil.org/OFL-FAQ_web).
 
 Cooper Hewitt is a trademark of Cooper Hewitt Smithsonian Design Museum.
 
