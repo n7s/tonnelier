@@ -36,7 +36,7 @@ before_deploy:
 deploy:
   provider: pages
   skip_cleanup: true
-    local-dir: $TRAVIS_BUILD_DIR/results/releases/
+  local-dir: $TRAVIS_BUILD_DIR/results/releases/
   github_token: "$GITHUB_TOKEN"
 
 notifications:
