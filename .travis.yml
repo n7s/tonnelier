@@ -31,7 +31,6 @@ branches:
 
 before_deploy:
     - ls -l $TRAVIS_BUILD_DIR
-    - tree -a
 
 deploy:
   provider: pages
