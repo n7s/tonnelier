@@ -24,19 +24,19 @@ script:
 - smith checksums
 - sile documentation/specimen.sil
 
-branches:
-  only:
-  - master
-
-
 before_deploy:
     - ls -l $TRAVIS_BUILD_DIR
 
 deploy:
-  provider: pages
+  provider: releases
   skip_cleanup: true
-  local-dir: $TRAVIS_BUILD_DIR/results/releases/
+  file-glob: true 
+  file: results/releases/*
   github_token: "$GITHUB_TOKEN"
+  on:
+    tags: true
+    branch: master
+
 
 notifications:
   email: false
