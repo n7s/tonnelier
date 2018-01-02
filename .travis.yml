@@ -32,9 +32,9 @@ deploy:
   file_glob: true
   file: results/releases/*
   on:
-    tags: true
+    tags: false
+    all_branches: true
     repo: n7s/tonnelier
-    branch: master
 notifications:
   email: false
   irc: false
