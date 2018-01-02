@@ -10,6 +10,7 @@ before_install:
 - sudo apt-get update -qq
 install:
 - sudo apt install smith-font
+- sudo apt install tree
 - sudo apt install sile
 script:
 - smith configure
@@ -20,11 +21,12 @@ script:
 - smith release
 - smith srcdist
 - smith checksums
-- sile documentation/specimen.sil
 before_deploy:
 - ls -l $TRAVIS_BUILD_DIR
+- tree -a $TRAVIS_BUILD_DIR
 deploy:
   provider: releases
+  skip_cleanup: true
   api_key:
     secure: Ks5y+HbUzmWQ37OqQ8NGY7m1JDtaYdHVf2D9uerBHcb+4eHgvev1xT70+HiOFXefwVcnEgb/7qvr+xi5xSJ48NQAUKhfiH8BL9H9QaHRWA4n+yZwRXZSdNsiCh3gdSBxOZTKqUaP1pErYkRlb861zWF6aGxY6fFFJhxSnDmyxguuL4JZdF7WOPrpaLRoEEyA4qzTT6GPblOcmn8hlHEublIW6VfOdFIdXJawZWj0cjmzV1aI3LpJCcXS4wrPPCBTMU0zWW8GmN+VJObSm9Vb7jFraVAJFTbZrrVhGutwTQuQjrS17qIr67R/A0X+oXr/ghy6z3NzzTwNmjJrS4OUzBWbKyLKlnso422QalAgNPcxXrc9LVo5eB6sOnSBi60X8mxM17iXVRr+FGLUGMf62J2DSFCXVMmaTRj76PHZy6McfWNbVWsz9nmqmy6iHa1WwyRD8z65HhPzWMJmqTfVj31/dli6Jt5ZDkwlUO6k4r/bwQ+Nx0Z7Gs2/438MSfHUCOYA0/qbMfx7xodfIq5tbAM967hHS1y8HBFChsmC9gfrxVJQ5USX4i+k11BnFq4W1lmvYD7HrYOMVjiOA+lh7UR+e3y51hvegf2+Wz1rsvrnWcVoHsKrvOLoyQJeCVPnNEw+8T9FmH/A6px0Ohiv+0nJyIcuhHqN0o/sx3tvXcU=
   file: results/releases/*
