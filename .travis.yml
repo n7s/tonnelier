@@ -44,7 +44,7 @@ deploy:
     - results/*err*
     - results/tests/*
   on:
-    tags: false
+    tags: true
     all_branches: true
     repo: n7s/tonnelier
 notifications:
