@@ -9,7 +9,7 @@ Tonnelier is french for Cooper.
 Chester Jenkins of [Village](http://vllg.com/) created the [custom typeface called Cooper Hewitt](http://www.cooperhewitt.org/colophon/cooper-hewitt-the-typeface-by-chester-jenkins/) for the [Cooper Hewitt](http://www.cooperhewitt.org/) Smithsonian Design Museum.  
 This design started life as [Galaxie Polaris Condensed](https://vllg.com/constellation/galaxie-polaris-cond) a geometric, sans-serif font that Chester Jenkins had worked on years ago.
 
-This Font Software is licensed under SIL Open Font License 1.1 [scripts.sil.org/OFL](http://scripts.sil.org/OFL)  
+This Font Software is licensed under SIL Open Font License 1.1 [(scripts.sil.org/OFL)](http://scripts.sil.org/OFL)  
 See the FAQ on [scripts.sil.org/OFL-FAQ_web](http://scripts.sil.org/OFL-FAQ_web).
 
 Cooper Hewitt is a trademark of Cooper Hewitt Smithsonian Design Museum.
