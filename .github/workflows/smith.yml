@@ -35,6 +35,7 @@ jobs:
           smith tarball
           smith release
       - uses: actions/upload-artifact@master
-          env: GITHUB_SHA: ${{ GITHUB_SHA }}
+        env:
+          GITHUB_SHA: ${{ GITHUB_SHA }}
           name: GITHUB_SHA
           path: results
