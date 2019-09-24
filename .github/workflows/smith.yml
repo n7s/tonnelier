@@ -35,6 +35,6 @@ jobs:
           smith tarball
           smith release
       - uses: actions/upload-artifact@master
-          with:
-            name: artifacts
-            path: results
+        with:
+          name: artifacts
+          path: results
