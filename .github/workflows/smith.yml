@@ -36,5 +36,5 @@ jobs:
           smith release
       - uses: actions/upload-artifact@master
         with:
-          name: $GITHUB_REPOSITORY-$GITHUB_SHA-$GITHUB_REF-artifacts
+          name: "$GITHUB_REPOSITORY-$GITHUB_SHA-$GITHUB_REF-artifacts"
           path: results
