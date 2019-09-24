@@ -1,6 +1,10 @@
 name: smith
 
-on: [push]
+on: 
+  push: 
+    branches:
+    - master
+    - release/*
 
 jobs:
   build:
@@ -22,6 +26,7 @@ jobs:
           sudo pip3 install --upgrade git+https://github.com/googlefonts/fontbakery.git@master#egg=fontbakery
       - name: configure / build / test / release 
         run: |
+          smith version
           smith configure
           smith build
           smith alltests
