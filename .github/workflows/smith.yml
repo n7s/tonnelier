@@ -34,8 +34,7 @@ jobs:
           smith zip
           smith tarball
           smith release
-
       - uses: actions/upload-artifact@master
         with:
-          name: actifacts
+          name: $GITHUB_REPOSITORY-$GITHUB_SHA-$GITHUB_REF-artifacts
           path: results
