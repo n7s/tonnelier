@@ -35,9 +35,9 @@ jobs:
           smith release 
 
       - uses: actions/upload-artifact@master
-          with:
-            name: actifacts
-            path: releases/* 
+        with:
+          name: actifacts
+          path: releases/* 
 
 
 
