@@ -1,0 +1,16 @@
+\begin[class=fontproof]{document}
+
+
+\proof[size="18,24,30,36",heading=Using a built-in text]{text_az}
+
+
+
+Adhesion: \adhesion[characters=adhesion]
+
+
+\pangrams
+\lorem[words=100]
+\repertoire
+
+
+\end{document}

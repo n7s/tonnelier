@@ -8,26 +8,31 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@master
       - name: Install smith toolchain
         run: |
           sudo add-apt-repository -y ppa:silnrsi/smith-py3
-          sudo add-apt-repository -y ppa:fontforge/fontforge
-          sudo add-apt-repository -y ppa:jonathonf/texlive-2019
-          sudo add-apt-repository -y ppa:git-core/ppa
           sudo apt-get update -q -y
           sudo apt-get remove *php* *mono* *dotnet* -y
           sudo apt-get autoremove -y
           sudo apt-get upgrade -q -y
-          sudo apt-get install libjson-perl libtext-csv-perl libharfbuzz-bin -y
-          sudo apt-get install smith-font -y --no-install-recommends
+          sudo apt-get install sile libtext-unicode-equivalents-perl libtext-pdf-perl libio-string-perl libfont-ttf-scripts-perl libfont-ttf-perl libalgorithm-diff-perl libxml-parser-perl grcompiler libtext-csv-perl libjson-perl libharfbuzz-bin -y
           sudo apt-get install python3-pip python3-setuptools -y
-          sudo pip3 install --upgrade git+https://github.com/googlefonts/fontbakery.git@master#egg=fontbakery
+          python3 -m pip install --upgrade git+https://github.com/silnrsi/pysilfont.git@master#egg=pysilfont --user
+          python3 -m pip install --upgrade git+https://github.com/silnrsi/palaso-python.git@master#egg=palaso --user
+          python3 -m pip install --upgrade git+https://github.com/silnrsi/smith.git@master#egg=smith --user
+          sudo pip3 install --upgrade git+https://github.com/googlefonts/fontbakery.git@master#egg=fontbakery --user
+          pip3 install fontmake --user
+          pip3 install MutatorMath --user
+          pip3 install Brotli --user
+          git clone https://github.com/silnrsi/fontproof
+          cd fontproof
+          sudo install -m 644 classes/* /usr/share/sile/classes/
+          sudo install -m 644 packages/* /usr/share/sile/packages/
       - name: configure / build / test / release
         run: |
-          smith version
           smith configure
           smith build
           smith alltests
@@ -37,4 +42,4 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: artifacts
-          path: results/releases
+          path: results/*
