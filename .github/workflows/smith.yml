@@ -24,7 +24,7 @@ jobs:
           python3 -m pip install --upgrade git+https://github.com/silnrsi/pysilfont.git@master#egg=pysilfont --user
           python3 -m pip install --upgrade git+https://github.com/silnrsi/palaso-python.git@master#egg=palaso --user
           python3 -m pip install --upgrade git+https://github.com/silnrsi/smith.git@master#egg=smith --user
-          sudo pip3 install --upgrade git+https://github.com/googlefonts/fontbakery.git@master#egg=fontbakery --user
+          sudo pip3 install --upgrade git+https://github.com/googlefonts/fontbakery.git@main#egg=fontbakery --user
           pip3 install fontmake --user
           pip3 install MutatorMath --user
           pip3 install Brotli --user
@@ -37,6 +37,7 @@ jobs:
           smith configure
           smith build
           smith alltests
+          smith ttfchecks
           smith zip
           smith tarball
           smith release
